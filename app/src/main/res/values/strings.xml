@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fitpeo Demo</string>
+    <string name="item_image">Item image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_is_just_a_sample_description_to_fill_the_remaining_space">This is Just a Sample Description to Fill the Remaining Space</string>
+    <string name="single_image">Single Image</string>
+    <string name="sample_detail_description">This is just a sample description about the image, and nothing else.</string>
+</resources>

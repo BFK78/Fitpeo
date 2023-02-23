@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="photoModel"
+            type="com.example.fitpeodemo.domain.model.PhotoModel" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.detail.Detail">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:layout_margin="16dp"
+        android:text="@{photoModel.title}"
+        tools:text="This is a sample text."
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/detail_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:text="@string/sample_detail_description"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
